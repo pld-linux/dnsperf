@@ -3,13 +3,13 @@ Summary(pl.UTF-8):	Narzędzia do testowania wydajności serwera DNS
 Name:		dnsperf
 Version:	1.0.0.1
 Release:	1
-License:	distributable
+License:	BSD-like/distributable
 Group:		Applications/Networking
 Source0:	ftp://ftp.nominum.com/pub/nominum/dnsperf/1.0.0.1/%{name}-%{version}-1.tar.gz
 # Source0-md5:	db2e3f85fbe1f75d384f9b5c1ff0759a
 URL:		http://www.nominum.com/services/measurement_tools.php
 BuildRequires:	autoconf
-BuildRequires:	bind-devel
+BuildRequires:	bind-devel >= 9.4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -50,6 +50,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc RELEASE_NOTES doc/*.pdf contrib/queryparse/{INSTALL,USAGE}
+%doc RELEASE_NOTES doc/*.pdf contrib/queryparse/{INSTALL,USAGE} common.h
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*.1*
