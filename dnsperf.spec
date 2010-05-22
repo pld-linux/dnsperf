@@ -4,7 +4,7 @@ Name:		dnsperf
 Version:	1.0.0.1
 Release:	1
 License:	BSD-like/distributable
-Group:		Applications/Networking
+Group:		Networking/Utilities
 Source0:	ftp://ftp.nominum.com/pub/nominum/dnsperf/1.0.0.1/%{name}-%{version}-1.tar.gz
 # Source0-md5:	db2e3f85fbe1f75d384f9b5c1ff0759a
 URL:		http://www.nominum.com/services/measurement_tools.php
